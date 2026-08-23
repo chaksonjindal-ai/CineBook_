@@ -1,0 +1,105 @@
+/* Contact page styles */
+.contact-page {
+  padding: 60px 20px;
+  min-height: 60vh;
+}
+
+.contact-container {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-container h1 {
+  color: white;
+  font-size: 2.2rem;
+  margin: 0 0 10px;
+}
+
+.contact-tagline {
+  color: #888;
+  font-size: 1.1rem;
+  margin: 0 0 35px;
+}
+
+/* Form */
+.contact-form {
+  background-color: #1a1a2e;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 14px;
+  background-color: #0a0a0f;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #b20710;
+}
+
+/* Success message */
+.success-message {
+  background-color: #1a1a2e;
+  padding: 40px 30px;
+  border-radius: 10px;
+}
+
+.success-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.success-message h2 {
+  color: white;
+  margin: 0 0 10px;
+}
+
+.success-message p {
+  color: #888;
+  margin: 0;
+}

@@ -1,0 +1,119 @@
+/* Home page styles */
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(180deg, #1a1a2e, #0a0a0f);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin: 0 0 15px;
+}
+
+.hero-content h1 span {
+  color: #e50914;
+}
+
+.hero-content p {
+  color: #888;
+  font-size: 1.1rem;
+  margin: 0 0 25px;
+}
+
+/* Search bar */
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-input {
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #1a1a2e;
+  color: white;
+  font-size: 1rem;
+}
+
+.search-input::placeholder {
+  color: #666;
+}
+
+.search-btn {
+  padding: 12px 25px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #b20710;
+}
+
+/* Movie sections */
+.movies-section {
+  padding: 40px 20px;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.movies-section h2 {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 0 25px;
+}
+
+/* Movie grid using CSS Grid */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Responsive: Tablet - 2 columns */
+@media (max-width: 900px) {
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive: Mobile - 1 column */
+@media (max-width: 500px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .movies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-input {
+    max-width: 100%;
+  }
+}
+
+/* No search results message */
+.no-results {
+  color: #888;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 40px 20px;
+}

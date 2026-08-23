@@ -1,0 +1,90 @@
+/* Footer styles */
+.footer {
+  background-color: #111;
+  padding: 40px 20px 20px;
+  margin-top: 60px;
+  border-top: 1px solid #222;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid layout for footer columns */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-brand h3 {
+  color: white;
+  margin: 0 0 10px;
+  font-size: 1.3rem;
+}
+
+.footer-brand p {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.footer-column h4 {
+  color: white;
+  margin: 0 0 15px;
+  font-size: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #888;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.footer-column a:hover {
+  color: #e50914;
+}
+
+/* Copyright bar */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #222;
+}
+
+.footer-bottom p {
+  color: #666;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
