@@ -67,3 +67,4 @@ export const selectIsFavourite = (state, movieId) =>
   state.favourites.favouriteIds.includes(Number(movieId));
 
 export default favouritesSlice.reducer;
+

@@ -20,3 +20,4 @@ import { createContext } from 'react';
 export const BookingContext = createContext(null);
 
 export default BookingContext;
+

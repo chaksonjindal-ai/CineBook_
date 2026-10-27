@@ -130,3 +130,4 @@ export const selectBookedSeatsForSlot = (state, movieId, date, showtime) => {
 };
 
 export default bookingSlice.reducer;
+

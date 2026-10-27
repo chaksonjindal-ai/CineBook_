@@ -21,3 +21,4 @@ function MovieGrid({ movies = [], emptyMessage = 'No movies available.' }) {
 }
 
 export default MovieGrid;
+

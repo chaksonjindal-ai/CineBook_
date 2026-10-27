@@ -239,3 +239,4 @@ The codebase includes an automated verification script (`src/test-verify.js` run
 - ✅ Form validation regex patterns correctly validate emails and 10-digit phone numbers.
 - ✅ Oxlint completes with **0 errors and 0 warnings**.
 - ✅ Vite production build builds successfully.
+# Cinebook2
