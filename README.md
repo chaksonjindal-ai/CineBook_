@@ -240,3 +240,4 @@ The codebase includes an automated verification script (`src/test-verify.js` run
 - ✅ Oxlint completes with **0 errors and 0 warnings**.
 - ✅ Vite production build builds successfully.
 # Cinebook2
+# Cinebook2
