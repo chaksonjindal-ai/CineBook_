@@ -1,0 +1,85 @@
+/* Not Found Page */
+.not-found-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 180px);
+  padding: 40px 20px;
+}
+
+.not-found-card {
+  text-align: center;
+  background-color: #141424;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 50px 36px;
+  max-width: 520px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+.error-code {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #e50914;
+  line-height: 1;
+  display: block;
+  letter-spacing: -2px;
+  text-shadow: 0 0 30px rgba(229, 9, 20, 0.4);
+}
+
+.not-found-icon {
+  font-size: 3rem;
+  display: block;
+  margin: 16px 0;
+}
+
+.not-found-card h1 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.not-found-card p {
+  color: #9ca3af;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.not-found-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-home {
+  padding: 12px 24px;
+  background-color: #e50914;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-home:hover {
+  background-color: #b20710;
+  transform: translateY(-2px);
+}
+
+.btn-catalog {
+  padding: 12px 24px;
+  background-color: #242436;
+  border: 1px solid #374151;
+  color: #e5e7eb;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-catalog:hover {
+  background-color: #32324a;
+}

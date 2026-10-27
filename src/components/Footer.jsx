@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 function Footer() {
@@ -9,42 +10,52 @@ function Footer() {
           {/* Brand */}
           <div className="footer-brand">
             <h3>🎬 CineBook</h3>
-            <p>Your go-to platform for booking movie tickets online.</p>
+            <p>
+              Your modern platform for booking cinema tickets online. Select your favorite seats,
+              enjoy top blockbusters, and experience seamless theater entertainment.
+            </p>
+            <div className="tech-stack-tag">
+              Built with React • Redux Toolkit • Context API • Vite
+            </div>
           </div>
 
           {/* Quick Links */}
           <div className="footer-column">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#movies">Movies</a></li>
-              <li><a href="#popular">Popular</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/movies">Browse Movies</Link></li>
+              <li><Link to="/favourites">Watchlist & Favourites</Link></li>
+              <li><Link to="/my-bookings">My Bookings</Link></li>
             </ul>
           </div>
 
-          {/* Support */}
+          {/* Information */}
           <div className="footer-column">
-            <h4>Support</h4>
+            <h4>Explore</h4>
             <ul>
-              <li><a href="#help">Help Center</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-              <li><a href="#faq">FAQs</a></li>
+              <li><Link to="/about">About CineBook</Link></li>
+              <li><Link to="/contact">Help & Contact</Link></li>
+              <li><Link to="/login">Account Sign In</Link></li>
+              <li><Link to="/signup">Register</Link></li>
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* Academic Info */}
           <div className="footer-column">
-            <h4>Legal</h4>
+            <h4>College Evaluation</h4>
             <ul>
-              <li><a href="#terms">Terms of Service</a></li>
-              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><span className="footer-info-text">Course: React Front End</span></li>
+              <li><span className="footer-info-text">Milestone: Evaluation 2</span></li>
+              <li><span className="footer-info-text">Architecture: Redux + Context</span></li>
+              <li><span className="footer-info-text">Persistence: LocalStorage</span></li>
             </ul>
           </div>
         </div>
 
         {/* Copyright */}
         <div className="footer-bottom">
-          <p>&copy; 2025 CineBook. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} CineBook — Movie Ticket Booking System. All rights reserved.</p>
         </div>
       </div>
     </footer>

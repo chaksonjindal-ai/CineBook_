@@ -1,14 +1,16 @@
 /* Navbar styles */
 .navbar {
-  background-color: #111;
-  padding: 15px 20px;
+  background-color: #111118;
+  padding: 14px 24px;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
 }
 
 .navbar-container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -19,14 +21,20 @@
 .navbar-logo {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: white;
+  gap: 10px;
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  transition: opacity 0.2s;
+}
+
+.navbar-logo:hover {
+  opacity: 0.9;
 }
 
 .logo-icon {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .logo-text {
@@ -37,38 +45,104 @@
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 16px;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
-  color: #ccc;
+  color: #b3b3c2;
   text-decoration: none;
-  font-size: 1rem;
-  padding: 8px 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 8px 14px;
   border-radius: 6px;
-  transition: color 0.2s;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .nav-links a:hover {
-  color: white;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 /* Active link style - NavLink adds 'active' class automatically */
 .nav-links a.active {
-  color: #e50914;
+  color: #ffffff;
+  background-color: rgba(229, 9, 20, 0.15);
+  border-bottom: 2px solid #e50914;
+}
+
+/* Badges on Nav items (Favourites & Bookings count) */
+.badge-link {
+  position: relative;
+}
+
+.nav-badge {
+  background-color: #e50914;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: bold;
+  padding: 2px 7px;
+  border-radius: 12px;
+  line-height: 1;
+}
+
+.nav-badge.count-active {
+  background-color: #22c55e;
 }
 
 /* Login button style */
 .login-btn {
-  background-color: #e50914;
-  color: white !important;
+  background-color: #e50914 !important;
+  color: #ffffff !important;
   padding: 8px 20px !important;
   border-radius: 6px;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.3);
 }
 
 .login-btn:hover {
-  background-color: #b20710;
+  background-color: #b20710 !important;
+  transform: translateY(-1px);
+}
+
+/* Authenticated User pill */
+.user-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 6px;
+}
+
+.user-greeting {
+  font-size: 0.9rem;
+  color: #f3f4f6;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logout-btn {
+  background: none;
+  border: 1px solid #444;
+  color: #bbb;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #2a2a3e;
+  color: #ff6b6b;
+  border-color: #ff6b6b;
 }
 
 /* Mobile menu button */
@@ -77,12 +151,14 @@
   background: none;
   border: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
 }
 
 /* Responsive: Tablet and Mobile */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .menu-toggle {
     display: block;
   }
@@ -91,12 +167,14 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 65px;
     left: 0;
     right: 0;
-    background-color: #111;
-    padding: 20px;
-    gap: 10px;
+    background-color: #12121c;
+    border-bottom: 1px solid #2a2a3a;
+    padding: 20px 24px;
+    gap: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
   }
 
   .nav-links.active {
@@ -105,7 +183,23 @@
 
   .nav-links a {
     width: 100%;
-    text-align: center;
+    justify-content: center;
     padding: 12px;
+  }
+
+  .user-nav-item {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .user-greeting {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logout-btn {
+    width: 100%;
+    padding: 10px;
   }
 }

@@ -1,0 +1,49 @@
+/* Reusable Movie Grid */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Empty state */
+.movie-grid-empty {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #12121c;
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.movie-grid-empty .empty-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.movie-grid-empty .empty-text {
+  color: #9ca3af;
+  font-size: 1.1rem;
+}
+
+/* Responsive Grid */
+@media (max-width: 1100px) {
+  .movies-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movies-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

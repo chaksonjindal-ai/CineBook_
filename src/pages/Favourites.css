@@ -1,0 +1,95 @@
+/* Favourites Page */
+.favourites-page {
+  padding: 40px 24px 60px;
+}
+
+.favourites-container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.favourites-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 16px;
+}
+
+.favourites-header h1 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.favourites-header p {
+  color: #9ca3af;
+  font-size: 1rem;
+}
+
+.clear-all-favs-btn {
+  background: none;
+  border: 1px solid #4b5563;
+  color: #9ca3af;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.clear-all-favs-btn:hover {
+  border-color: #ef4444;
+  color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+/* Empty Favourites Card */
+.empty-favourites-card {
+  text-align: center;
+  padding: 70px 24px;
+  background-color: #141424;
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.empty-heart-icon {
+  font-size: 3.5rem;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.empty-favourites-card h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.empty-favourites-card p {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.browse-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #e50914;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.browse-btn:hover {
+  background-color: #b20710;
+}

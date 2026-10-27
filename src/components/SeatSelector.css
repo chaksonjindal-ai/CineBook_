@@ -1,0 +1,260 @@
+/* Seat Selector Styles */
+.seat-selector-container {
+  background-color: #12121e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 30px 24px;
+  margin-bottom: 25px;
+}
+
+/* Curved Screen */
+.screen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.curved-screen {
+  width: 85%;
+  max-width: 500px;
+  height: 12px;
+  background: linear-gradient(90deg, rgba(229, 9, 20, 0.2), #e50914, rgba(229, 9, 20, 0.2));
+  border-radius: 50% 50% 0 0;
+  box-shadow: 0 4px 20px rgba(229, 9, 20, 0.6);
+  margin-bottom: 8px;
+}
+
+.screen-label {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: #6b7280;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Seating Grid */
+.seating-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 520px;
+  margin: 0 auto 30px;
+}
+
+.seat-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.row-label {
+  width: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #9ca3af;
+  text-align: center;
+}
+
+.row-seats {
+  display: flex;
+  gap: 8px;
+}
+
+/* Aisle gap after seat 4 */
+.row-seats button:nth-child(4) {
+  margin-right: 18px;
+}
+
+/* Individual Seat Styling */
+.seat {
+  width: 36px;
+  height: 34px;
+  border-radius: 6px 6px 3px 3px;
+  border: 1px solid #374151;
+  background-color: #1f2937;
+  color: #d1d5db;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Available */
+.seat.available:hover {
+  background-color: #374151;
+  border-color: #9ca3af;
+  transform: translateY(-2px);
+}
+
+/* VIP Seat */
+.seat.vip {
+  background-color: #1e1b4b;
+  border-color: #6366f1;
+  color: #c7d2fe;
+}
+
+.seat.vip:hover {
+  background-color: #312e81;
+  transform: translateY(-2px);
+}
+
+/* Selected Seat */
+.seat.selected {
+  background-color: #e50914 !important;
+  border-color: #ff4d4d !important;
+  color: #ffffff !important;
+  transform: scale(1.08);
+  box-shadow: 0 0 12px rgba(229, 9, 20, 0.7);
+}
+
+/* Booked / Occupied Seat */
+.seat.booked {
+  background-color: #0b0f17 !important;
+  border-color: #1f242e !important;
+  color: #4b5563 !important;
+  cursor: not-allowed !important;
+  opacity: 0.45;
+  text-decoration: line-through;
+}
+
+/* Legend */
+.seat-legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 16px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.legend-seat {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.legend-seat.available {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+}
+
+.legend-seat.vip {
+  background-color: #1e1b4b;
+  border: 1px solid #6366f1;
+}
+
+.legend-seat.selected {
+  background-color: #e50914;
+}
+
+.legend-seat.booked {
+  background-color: #0b0f17;
+  border: 1px solid #1f242e;
+  opacity: 0.5;
+}
+
+/* Selection Summary Bar */
+.selection-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-top: 10px;
+  flex-wrap: wrap;
+}
+
+.selected-seats-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.summary-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.seat-chips-list {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.seat-chip {
+  background-color: #e50914;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.no-seats-text {
+  color: #6b7280;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.live-pricing-bar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.price-item {
+  display: flex;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.price-item.total {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.price-item.total .price-val {
+  color: #4ade80;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .row-seats {
+    gap: 4px;
+  }
+  .row-seats button:nth-child(4) {
+    margin-right: 10px;
+  }
+  .seat {
+    width: 28px;
+    height: 28px;
+    font-size: 0.65rem;
+  }
+  .selection-summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .live-pricing-bar {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
